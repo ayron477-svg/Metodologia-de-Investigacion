@@ -3,7 +3,7 @@ from datetime import datetime
 import re
 
 def extraer_por_rango_experiencia(busqueda, rango_tipo):
-    # Pedimos el máximo de 100 ofertas para tener una buena base
+    # Pedimos el máximo de 100 ofertas 
     url = f"https://www.getonbrd.com/api/v0/search/jobs?query={busqueda}&per_page=100"
     
     print(f"Conectando a la API para '{busqueda}' -> Buscando rango: {rango_tipo.upper()}...")
